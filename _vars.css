@@ -1,0 +1,43 @@
+:root {
+    /* Colors */
+    --edit-mode-highlight-box: #ffffff;
+    --sap-green: #438e2c;
+    --star: #a00000;
+    --grey: #d8d8d8;
+    --extract-brand---filled-box: #fb3e3b;
+    --blue-style: #2e429b;
+    --pink-style: #7a2a6c;
+    --oval-style: #82a878;
+    --coral-pink: #ff8989;
+    /* Text Styles */
+    --roboto-font-style: italic;
+    --my-new-style-font-family: "Arial Black";
+    --my-new-style-font-size: 50px;
+    --my-new-style-line-height: 1.18px;
+    --my-new-style-letter-spacing: 0.4px;
+    --new-text-font-family: "Comic Sans MS";
+    --new-text-font-size: 30px;
+    --type-something-style-font-family: "Arial Black";
+    --type-something-style-font-size: 40px;
+    --type-something-style-font-style: italic;
+    --type-something-style-line-height: 1.0px;
+    --type-something-style-letter-spacing: 0.4px;
+    /* Layer Styles */
+    --transparent-green-background-color: rgba(35,176,75,0.62);
+    --transparent-green-border-width: 3px;
+    --transparent-green-border-color: rgba(153,52,52,0.71);
+    --transparent-green-border-style: solid;
+    --redlayer-background-color: #A00000;
+    --redlayer-border-width: 1px;
+    --redlayer-border-color: #979797;
+    --redlayer-border-style: solid;
+    --blue-layer-background-color: #2E439B;
+    --blue-layer-border-width: 5px;
+    --blue-layer-border-color: rgba(0,0,0,1);
+    --blue-layer-border-style: solid;
+    --blue-layer-shadow-offset-x: 0px;
+    --blue-layer-shadow-offset-y: 2px;
+    --blue-layer-shadow-blur: 4px;
+    --blue-layer-shadow-spread: 0px;
+    --blue-layer-shadow-color: rgba(0,0,0,0.50);
+}
