@@ -1,0 +1,26 @@
+.sofia-pro-light {
+}
+.sofia-pro-bold {
+}
+.roboto {
+     font-style: var(--roboto-font-style);
+}
+.dfsdfsdf {
+}
+.my-new-style {
+     font-family: var(--my-new-style-font-family);
+     font-size: var(--my-new-style-font-size);
+     line-height: var(--my-new-style-line-height);
+     letter-spacing: var(--my-new-style-letter-spacing);
+}
+.new-text {
+     font-family: var(--new-text-font-family);
+     font-size: var(--new-text-font-size);
+}
+.type-something-style {
+     font-family: var(--type-something-style-font-family);
+     font-size: var(--type-something-style-font-size);
+     font-style: var(--type-something-style-font-style);
+     line-height: var(--type-something-style-line-height);
+     letter-spacing: var(--type-something-style-letter-spacing);
+}
