@@ -1,0 +1,4 @@
+.header-text {
+     font-family: var(--header-text-font-family);
+     font-size: var(--header-text-font-size);
+}
