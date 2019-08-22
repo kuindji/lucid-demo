@@ -1,4 +1,8 @@
 :root {
     /* Colors */
+    --body-text-color: #ffffff;
     --body-color: #1d0b42;
+    /* Text Styles */
+    --header-text-font-family: "Helvetica";
+    --header-text-font-size: 30px;
 }
