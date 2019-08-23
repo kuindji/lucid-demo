@@ -4,6 +4,9 @@ html * {
     background-color: var(--body-color);
 }
 
+h1 {
+    font-weight: 400;
+}
 
 .centered {
     margin-left: auto;
@@ -38,4 +41,21 @@ body {
 
 footer {
     line-height: 50px;
+}
+
+
+.header-text {
+    color: var(--header-text-color);
+}
+
+.body-text {
+    color: var(--body-text-color);
+}
+
+.menu-text {
+    color: var(--menu-text-color);
+}
+
+.menu-text a {
+    color: var(--menu-text-color);
 }
