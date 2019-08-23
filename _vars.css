@@ -1,8 +1,14 @@
 :root {
     /* Colors */
+    --header-text-color: #ffffff;
     --body-text-color: #ffffff;
+    --menu-text-color: #ffe0aa;
     --body-color: #1d0b42;
     /* Text Styles */
+    --menu-text-font-family: "Helvetica";
+    --menu-text-font-size: 15px;
+    --body-text-font-family: "Times New Roman";
+    --body-text-font-size: 18px;
     --header-text-font-family: "Helvetica";
     --header-text-font-size: 30px;
 }
