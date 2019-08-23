@@ -1,3 +1,11 @@
+.menu-text {
+     font-family: var(--menu-text-font-family);
+     font-size: var(--menu-text-font-size);
+}
+.body-text {
+     font-family: var(--body-text-font-family);
+     font-size: var(--body-text-font-size);
+}
 .header-text {
      font-family: var(--header-text-font-family);
      font-size: var(--header-text-font-size);
