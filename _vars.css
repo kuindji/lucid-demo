@@ -12,4 +12,14 @@
     --body-text-font-size: 18px;
     --header-text-font-family: "Helvetica";
     --header-text-font-size: 30px;
+    /* Layer Styles */
+    --top-menu-background-color: #191919;
+    --top-menu-border-width: 1px;
+    --top-menu-border-color: #979797;
+    --top-menu-border-style: solid;
+    --top-menu-shadow-offset-x: 0px;
+    --top-menu-shadow-offset-y: 2px;
+    --top-menu-shadow-blur: 4px;
+    --top-menu-shadow-spread: 0px;
+    --top-menu-shadow-color: rgba(0,0,0,0.50);
 }
