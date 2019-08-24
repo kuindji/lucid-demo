@@ -1,6 +1,9 @@
 
 html * {
     box-sizing: border-box;
+}
+
+html {
     background-color: var(--body-color);
 }
 
@@ -58,4 +61,7 @@ footer {
 
 .menu-text a {
     color: var(--menu-text-color);
+}
+.menu-text a:hover {
+    color: var(--menu-text-hover);
 }
