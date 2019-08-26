@@ -51,6 +51,14 @@ footer {
     color: var(--header-text-color);
 }
 
+.subheader-text {
+    color: var(--subheader-text-color);
+}
+
+.footer-text {
+    color: var(--footer-text-color);
+}
+
 .body-text {
     color: var(--body-text-color);
 }
