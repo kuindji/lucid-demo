@@ -1,3 +1,11 @@
+.subheader-text {
+     font-family: var(--subheader-text-font-family);
+     font-size: var(--subheader-text-font-size);
+}
+.footer-text {
+     font-family: var(--footer-text-font-family);
+     font-size: var(--footer-text-font-size);
+}
 .menu-text {
      font-family: var(--menu-text-font-family);
      font-size: var(--menu-text-font-size);
