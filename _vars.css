@@ -1,11 +1,17 @@
 :root {
     /* Colors */
+    --subheader-text-color: #d6d6d6;
+    --footer-text-color: #93e2e0;
     --menu-text-hover: #c5ae86;
     --header-text-color: #ffffff;
     --body-text-color: #ffffff;
     --menu-text-color: #ffe0aa;
     --body-color: #1d0b42;
     /* Text Styles */
+    --subheader-text-font-family: "Georgia";
+    --subheader-text-font-size: 20px;
+    --footer-text-font-family: "Helvetica";
+    --footer-text-font-size: 15px;
     --menu-text-font-family: "Helvetica";
     --menu-text-font-size: 15px;
     --body-text-font-family: "Georgia";
