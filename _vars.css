@@ -5,11 +5,11 @@
     --body-text-color: #ffffff;
     --menu-text-hover: #c5ae86;
     --subheader-text-color: #d5d5d5;
-    --footer-text-color: #92e2df;
+    --footer-text-color: #6fb473;
     --body-color: #1d0b42;
     /* Text Styles */
     --header-text-font-family: "Helvetica";
-    --header-text-font-size: 30px;
+    --header-text-font-size: 40px;
     --body-text-font-family: "Georgia";
     --body-text-font-size: 18px;
     --menu-text-font-family: "Helvetica";
@@ -19,7 +19,7 @@
     --subheader-text-font-family: "Georgia";
     --subheader-text-font-size: 20px;
     /* Layer Styles */
-    --top-menu-background-color: #191919;
+    --top-menu-background-color: #323232;
     --top-menu-shadow-offset-x: 0px;
     --top-menu-shadow-offset-y: 2px;
     --top-menu-shadow-blur: 4px;
