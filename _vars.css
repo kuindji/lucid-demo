@@ -1,28 +1,25 @@
 :root {
     /* Colors */
-    --subheader-text-color: #d6d6d6;
-    --footer-text-color: #93e2e0;
-    --menu-text-hover: #c5ae86;
     --header-text-color: #ffffff;
-    --body-text-color: #ffffff;
     --menu-text-color: #ffe0aa;
+    --body-text-color: #ffffff;
+    --menu-text-hover: #c5ae86;
+    --subheader-text-color: #d5d5d5;
+    --footer-text-color: #6fb473;
     --body-color: #1d0b42;
     /* Text Styles */
-    --subheader-text-font-family: "Georgia";
-    --subheader-text-font-size: 20px;
-    --footer-text-font-family: "Helvetica";
-    --footer-text-font-size: 15px;
-    --menu-text-font-family: "Helvetica";
-    --menu-text-font-size: 15px;
+    --header-text-font-family: "Helvetica";
+    --header-text-font-size: 40px;
     --body-text-font-family: "Georgia";
     --body-text-font-size: 18px;
-    --header-text-font-family: "Helvetica";
-    --header-text-font-size: 30px;
+    --menu-text-font-family: "Helvetica";
+    --menu-text-font-size: 15px;
+    --footer-text-font-family: "Helvetica";
+    --footer-text-font-size: 15px;
+    --subheader-text-font-family: "Georgia";
+    --subheader-text-font-size: 20px;
     /* Layer Styles */
-    --top-menu-background-color: #191919;
-    --top-menu-border-width: 1px;
-    --top-menu-border-color: #979797;
-    --top-menu-border-style: solid;
+    --top-menu-background-color: #323232;
     --top-menu-shadow-offset-x: 0px;
     --top-menu-shadow-offset-y: 2px;
     --top-menu-shadow-blur: 4px;
