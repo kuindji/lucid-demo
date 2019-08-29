@@ -14,7 +14,10 @@
     }, 
     "menu-text": {
       "type": "font", 
-      "value": {}
+      "value": {
+        "family": "Helvetica", 
+        "size": 15
+      }
     }, 
     "footer-text-color": {
       "type": "color", 
@@ -30,15 +33,24 @@
     }, 
     "header-text": {
       "type": "font", 
-      "value": {}
+      "value": {
+        "family": "Helvetica", 
+        "size": 30
+      }
     }, 
     "footer-text": {
       "type": "font", 
-      "value": {}
+      "value": {
+        "family": "Helvetica", 
+        "size": 15
+      }
     }, 
     "body-text": {
       "type": "font", 
-      "value": {}
+      "value": {
+        "family": "Georgia", 
+        "size": 18
+      }
     }, 
     "body-color": {
       "type": "color", 
@@ -46,7 +58,10 @@
     }, 
     "subheader-text": {
       "type": "font", 
-      "value": {}
+      "value": {
+        "family": "Georgia", 
+        "size": 20
+      }
     }, 
     "top-menu": {
       "type": "layer", 
