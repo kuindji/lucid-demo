@@ -1,0 +1,68 @@
+{
+  "props": {
+    "body-text-color": {
+      "type": "color", 
+      "value": "#ffffff"
+    }, 
+    "header-text-color": {
+      "type": "color", 
+      "value": "#ffffff"
+    }, 
+    "subheader-text-color": {
+      "type": "color", 
+      "value": "#d6d6d6"
+    }, 
+    "menu-text": {
+      "type": "font", 
+      "value": {}
+    }, 
+    "footer-text-color": {
+      "type": "color", 
+      "value": "#92e2df"
+    }, 
+    "menu-text-hover": {
+      "type": "color", 
+      "value": "#c5ae86"
+    }, 
+    "menu-text-color": {
+      "type": "color", 
+      "value": "#ffe0aa"
+    }, 
+    "header-text": {
+      "type": "font", 
+      "value": {}
+    }, 
+    "footer-text": {
+      "type": "font", 
+      "value": {}
+    }, 
+    "body-text": {
+      "type": "font", 
+      "value": {}
+    }, 
+    "body-color": {
+      "type": "color", 
+      "value": "#1d0b42"
+    }, 
+    "subheader-text": {
+      "type": "font", 
+      "value": {}
+    }, 
+    "top-menu": {
+      "type": "layer", 
+      "value": {
+        "shadow": {
+          "y": 2, 
+          "color": "rgba(0,0,0,0.50)", 
+          "blur": 4
+        }, 
+        "border": {
+          "color": "#979797", 
+          "width": 1, 
+          "style": "solid"
+        }, 
+        "backgroundColor": "#191919"
+      }
+    }
+  }
+}
