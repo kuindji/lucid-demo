@@ -1,4 +1,9 @@
 export default {
+ "systemFont": {
+  "fontSize": 16,
+  "fontWeight": "400",
+  "fontFamily": "Arial Bold"
+ },
  "menuText": {
   "fontSize": 15,
   "fontWeight": "400",
@@ -15,13 +20,8 @@ export default {
   "fontFamily": "Helvetica"
  },
  "bodyText": {
-  "fontSize": 18,
+  "fontSize": 16,
   "fontWeight": "400",
-  "fontFamily": "Georgia"
- },
- "subheaderText": {
-  "fontSize": 20,
-  "fontWeight": "400",
-  "fontFamily": "Georgia"
+  "fontFamily": "Roboto"
  }
 }

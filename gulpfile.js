@@ -1,9 +1,14 @@
 const gulp = require('gulp');
-const fs = require("fs");
+const fs = require("fs-extra");
+const request = require("request");
+const gulpSequence = require('gulp-sequence');
+const cp = require("child_process");
+const path = require("path");
+
 
 gulp.task("prepare.colors", function(cb) {
 
-    var vars = fs.readFileSync("_vars.json");
+    var vars = fs.readFileSync("_ds.json");
     vars = JSON.parse(vars);
     var name,
         prop,
@@ -31,7 +36,7 @@ gulp.task("prepare.colors", function(cb) {
 
 gulp.task("prepare.fonts", function(cb) {
 
-    var vars = fs.readFileSync("_vars.json");
+    var vars = fs.readFileSync("_ds.json");
     vars = JSON.parse(vars);
     var name,
         prop,
@@ -41,7 +46,7 @@ gulp.task("prepare.fonts", function(cb) {
 
     for (name in vars.props) {
         prop = vars.props[name];
-        if (prop.type != "font") {
+        if (prop.type != "text-style") {
             continue;
         }
 
@@ -78,7 +83,7 @@ gulp.task("prepare.fonts", function(cb) {
 
 gulp.task("prepare.layers", function(cb) {
 
-    var vars = fs.readFileSync("_vars.json");
+    var vars = fs.readFileSync("_ds.json");
     vars = JSON.parse(vars);
     var name,
         prop,
@@ -89,7 +94,7 @@ gulp.task("prepare.layers", function(cb) {
 
     for (name in vars.props) {
         prop = vars.props[name];
-        if (prop.type != "layer") {
+        if (prop.type != "layer-style") {
             continue;
         }
 
@@ -144,3 +149,80 @@ gulp.task("prepare.layers", function(cb) {
 });
 
 
+gulp.task("fetch.fonts", function(cb) {
+    request("http://lucid.tld/api/export/json?export_key=9381aee822a0fbdf60c5e7f1996d0bfa", {json: true}, function(error, response, body) {
+        var data = JSON.parse(body.data[0].code),
+            fonts = data.fonts,
+            i, l, f,
+            name, url, ext, filename,
+            runLink = false,
+            cnt = 0,
+            fontsDir = "./MobileApp/assets/fonts";
+
+        fs.ensureDirSync(fontsDir);
+        fs.writeFileSync("./" + body.data[0].name, body.data[0].code);
+
+        var reactLink = function() {
+            cp.exec(
+                "react-native link",
+                {
+                    cwd: __dirname + "/MobileApp"
+                },
+                function(err, stdout, stderr) {
+                    runLink = false;
+                    if (err) {
+                        console.log(err);
+                    }
+                    done();
+                }
+            )
+        };
+
+        var done = function() {
+            if (cnt === 0) {
+                if (runLink === false) {
+                    cb();
+                }
+                else {
+                    reactLink();
+                }
+            }
+        };
+
+        for (i = 0, l = fonts.length; i < l; i++) {
+            f = fonts[i];
+            name = f.family;
+            url = f.url;
+            ext = url.split(".").pop();
+            filename = name + "." + ext;
+            runLink = true;
+
+            if (!fs.existsSync(fontsDir + "/" + filename)) {
+                cnt++;
+                request(url, {encoding: null}, function(error, response, body){
+                    fs.writeFileSync(fontsDir + "/" + filename, body);
+                    cnt--;
+                    done();
+                });
+            }
+        }
+
+        done();
+    });
+});
+
+
+gulp.task("fetch.css", function(cb){
+    request("http://lucid.tld/api/export/css?export_key=9381aee822a0fbdf60c5e7f1996d0bfa", {json: true}, function(error, response, body) {
+        var files = body.data,
+            i, l;
+
+        for (i = 0, l = files.length; i < l; i++) {
+            fs.writeFileSync("./" + files[i].name, files[i].code);
+        }
+
+        cb();
+    });
+});
+
+gulp.task("prepare", gulpSequence("prepare.colors", "prepare.fonts", "prepare.layers"));

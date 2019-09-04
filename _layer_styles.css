@@ -1,7 +1,7 @@
 .top-menu {
-     background-color: var(--top-menu-background-color);
-     border-width: var(--top-menu-border-width);
-     border-color: var(--top-menu-border-color);
-     border-style: var(--top-menu-border-style);
-     box-shadow: var(--top-menu-offset-x) var(--top-menu-offset-y) var(--top-menu-blur) var(--top-menu-spread) var(--top-menu-color);
+     background-color: top-menu-background-color;
+     border-width: top-menu-border-width;
+     border-color: top-menu-border-color;
+     border-style: top-menu-border-style;
+     box-shadow: top-menu-offset-x top-menu-offset-y top-menu-blur top-menu-spread top-menu-color;
 }

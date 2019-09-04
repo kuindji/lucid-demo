@@ -1,5 +1,26 @@
 {
+  "fonts": [
+    {
+      "url": "http://lucid.tld/cdn/fonts/f0357ea63766e37d7f4d116bcd37dcfe.ttf", 
+      "source": "user", 
+      "family": "Arial Bold"
+    }, 
+    {
+      "family": "Roboto", 
+      "weight": "regular", 
+      "url": "http://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5WZLCzYlKw.ttf", 
+      "source": "google"
+    }
+  ], 
   "props": {
+    "system-font": {
+      "type": "text-style", 
+      "value": {
+        "weight": "400", 
+        "family": "Arial Bold", 
+        "size": "16"
+      }
+    }, 
     "body-text-color": {
       "type": "color", 
       "value": "#ffffff"
@@ -13,7 +34,7 @@
       "value": "#d6d6d6"
     }, 
     "menu-text": {
-      "type": "font", 
+      "type": "text-style", 
       "value": {
         "family": "Helvetica", 
         "size": 15
@@ -32,39 +53,32 @@
       "value": "#ffe0aa"
     }, 
     "header-text": {
-      "type": "font", 
+      "type": "text-style", 
       "value": {
         "family": "Helvetica", 
         "size": 30
       }
     }, 
     "footer-text": {
-      "type": "font", 
+      "type": "text-style", 
       "value": {
         "family": "Helvetica", 
         "size": 15
       }
     }, 
     "body-text": {
-      "type": "font", 
+      "type": "text-style", 
       "value": {
-        "family": "Georgia", 
-        "size": 18
+        "family": "Roboto", 
+        "size": 16
       }
     }, 
     "body-color": {
       "type": "color", 
       "value": "#1d0b42"
     }, 
-    "subheader-text": {
-      "type": "font", 
-      "value": {
-        "family": "Georgia", 
-        "size": 20
-      }
-    }, 
     "top-menu": {
-      "type": "layer", 
+      "type": "layer-style", 
       "value": {
         "shadow": {
           "y": 2, 

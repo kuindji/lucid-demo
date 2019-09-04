@@ -4,7 +4,10 @@
   "description": "",
   "main": "",
   "dependencies": {
-    "gulp": "^4.0.2"
+    "fs-extra": "^8.1.0",
+    "gulp": "^4.0.2",
+    "gulp-sequence": "^1.0.0",
+    "request": "^2.88.0"
   },
   "devDependencies": {},
   "scripts": {
