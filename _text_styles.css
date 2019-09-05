@@ -1,26 +1,21 @@
 .system-font {
-     font-family: system-font-font-family;
-     font-size: system-font-font-size;
-     font-weight: system-font-font-weight;
-}
-.test {
-     font-family: test-font-family;
-     font-size: test-font-size;
-     font-weight: test-font-weight;
+     font-family: var(--system-font-font-family);
+     font-size: var(--system-font-font-size);
+     font-weight: var(--system-font-font-weight);
 }
 .footer-text {
-     font-family: footer-text-font-family;
-     font-size: footer-text-font-size;
+     font-family: var(--footer-text-font-family);
+     font-size: var(--footer-text-font-size);
 }
 .menu-text {
-     font-family: menu-text-font-family;
-     font-size: menu-text-font-size;
+     font-family: var(--menu-text-font-family);
+     font-size: var(--menu-text-font-size);
 }
 .body-text {
-     font-family: body-text-font-family;
-     font-size: body-text-font-size;
+     font-family: var(--body-text-font-family);
+     font-size: var(--body-text-font-size);
 }
 .header-text {
-     font-family: header-text-font-family;
-     font-size: header-text-font-size;
+     font-family: var(--header-text-font-family);
+     font-size: var(--header-text-font-size);
 }
