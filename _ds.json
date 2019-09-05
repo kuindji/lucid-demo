@@ -1,4 +1,38 @@
 {
+  "icons": [
+    {
+      "url": "http://lucid.tld/cdn/icons/3375f7f8b52385fe9b5896fbb9d1c259.svg", 
+      "name": "checksvg", 
+      "properties": {
+        "width": 450.0, 
+        "height": 450.0
+      }
+    }, 
+    {
+      "url": "http://lucid.tld/cdn/icons/6328367c51144293e9e035ed1af0ef93.svg", 
+      "name": "closesvg", 
+      "properties": {
+        "width": 357.0, 
+        "height": 357.0
+      }
+    }, 
+    {
+      "url": "http://lucid.tld/cdn/icons/cb4c4b6cc931b8fa9353307e8fd8190a.svg", 
+      "name": "downsvg", 
+      "properties": {
+        "width": 306.0, 
+        "height": 306.0
+      }
+    }, 
+    {
+      "url": "http://lucid.tld/cdn/icons/d9cf9c81db5ceae2f5a20033166f76eb.svg", 
+      "name": "logoutsvg", 
+      "properties": {
+        "width": 512.0, 
+        "height": 512.0
+      }
+    }
+  ], 
   "fonts": [
     {
       "url": "http://lucid.tld/cdn/fonts/f0357ea63766e37d7f4d116bcd37dcfe.ttf", 
