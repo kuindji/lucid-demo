@@ -1,0 +1,28 @@
+:root {
+    /* Colors */
+    --header-text-color: #ffffff;
+    --menu-text-color: #ffe0aa;
+    --body-text-color: #ffffff;
+    --menu-text-hover: #c5ae86;
+    --subheader-text-color: #d5d5d5;
+    --footer-text-color: #6fb473;
+    --body-color: #1d0b42;
+    /* Text Styles */
+    --header-text-font-family: "Roboto";
+    --header-text-font-size: 40px;
+    --body-text-font-family: "Roboto";
+    --body-text-font-size: 18px;
+    --menu-text-font-family: "Roboto";
+    --menu-text-font-size: 15px;
+    --footer-text-font-family: "Roboto";
+    --footer-text-font-size: 15px;
+    --subheader-text-font-family: "Roboto";
+    --subheader-text-font-size: 20px;
+    /* Layer Styles */
+    --top-menu-background-color: #323232;
+    --top-menu-shadow-offset-x: 0px;
+    --top-menu-shadow-offset-y: 2px;
+    --top-menu-shadow-blur: 4px;
+    --top-menu-shadow-spread: 0px;
+    --top-menu-shadow-color: rgba(0,0,0,0.50);
+}
