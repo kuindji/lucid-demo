@@ -1,0 +1,86 @@
+{
+  "fonts": [
+    {
+      "family": "Roboto", 
+      "weight": "regular", 
+      "url": "http://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5WZLCzYlKw.ttf", 
+      "source": "google"
+    }
+  ], 
+  "props": {
+    "body-text-color": {
+      "type": "color", 
+      "value": "#ffffff"
+    }, 
+    "header-text-color": {
+      "type": "color", 
+      "value": "#ffffff"
+    }, 
+    "subheader-text-color": {
+      "type": "color", 
+      "value": "#d5d5d5"
+    }, 
+    "menu-text": {
+      "type": "text-style", 
+      "value": {
+        "family": "Roboto", 
+        "size": 15
+      }
+    }, 
+    "footer-text-color": {
+      "type": "color", 
+      "value": "#6fb473"
+    }, 
+    "menu-text-hover": {
+      "type": "color", 
+      "value": "#c5ae86"
+    }, 
+    "menu-text-color": {
+      "type": "color", 
+      "value": "#ffe0aa"
+    }, 
+    "header-text": {
+      "type": "text-style", 
+      "value": {
+        "family": "Roboto", 
+        "size": 40
+      }
+    }, 
+    "footer-text": {
+      "type": "text-style", 
+      "value": {
+        "family": "Roboto", 
+        "size": 15
+      }
+    }, 
+    "body-text": {
+      "type": "text-style", 
+      "value": {
+        "family": "Roboto", 
+        "size": 18
+      }
+    }, 
+    "body-color": {
+      "type": "color", 
+      "value": "#1d0b42"
+    }, 
+    "subheader-text": {
+      "type": "text-style", 
+      "value": {
+        "family": "Roboto", 
+        "size": 20
+      }
+    }, 
+    "top-menu": {
+      "type": "layer-style", 
+      "value": {
+        "shadow": {
+          "y": 2, 
+          "color": "rgba(0,0,0,0.50)", 
+          "blur": 4
+        }, 
+        "backgroundColor": "#323232"
+      }
+    }
+  }
+}
