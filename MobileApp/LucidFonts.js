@@ -20,7 +20,7 @@ export default {
   "fontFamily": "Roboto"
  },
  "subheaderText": {
-  "fontSize": 20,
+  "fontSize": 30,
   "fontWeight": "400",
   "fontFamily": "Roboto"
  }
