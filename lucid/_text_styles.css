@@ -1,0 +1,20 @@
+.header-text {
+     font-family: var(--header-text-font-family);
+     font-size: var(--header-text-font-size);
+}
+.body-text {
+     font-family: var(--body-text-font-family);
+     font-size: var(--body-text-font-size);
+}
+.menu-text {
+     font-family: var(--menu-text-font-family);
+     font-size: var(--menu-text-font-size);
+}
+.footer-text {
+     font-family: var(--footer-text-font-family);
+     font-size: var(--footer-text-font-size);
+}
+.subheader-text {
+     font-family: var(--subheader-text-font-family);
+     font-size: var(--subheader-text-font-size);
+}
