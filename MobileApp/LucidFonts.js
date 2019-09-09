@@ -1,26 +1,26 @@
 export default {
- "systemFont": {
-  "fontSize": 16,
-  "fontWeight": "400",
-  "fontFamily": "Arial Bold"
- },
  "menuText": {
   "fontSize": 15,
   "fontWeight": "400",
-  "fontFamily": "Helvetica"
+  "fontFamily": "Roboto"
  },
  "headerText": {
-  "fontSize": 30,
+  "fontSize": 40,
   "fontWeight": "400",
-  "fontFamily": "Helvetica"
+  "fontFamily": "Roboto"
  },
  "footerText": {
   "fontSize": 15,
   "fontWeight": "400",
-  "fontFamily": "Helvetica"
+  "fontFamily": "Roboto"
  },
  "bodyText": {
-  "fontSize": 16,
+  "fontSize": 18,
+  "fontWeight": "400",
+  "fontFamily": "Roboto"
+ },
+ "subheaderText": {
+  "fontSize": 20,
   "fontWeight": "400",
   "fontFamily": "Roboto"
  }

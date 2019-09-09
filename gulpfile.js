@@ -8,7 +8,7 @@ const path = require("path");
 
 gulp.task("prepare.colors", function(cb) {
 
-    var vars = fs.readFileSync("_ds.json");
+    var vars = fs.readFileSync("lucid/_ds.json");
     vars = JSON.parse(vars);
     var name,
         prop,
@@ -36,7 +36,7 @@ gulp.task("prepare.colors", function(cb) {
 
 gulp.task("prepare.fonts", function(cb) {
 
-    var vars = fs.readFileSync("_ds.json");
+    var vars = fs.readFileSync("lucid/_ds.json");
     vars = JSON.parse(vars);
     var name,
         prop,
@@ -83,7 +83,7 @@ gulp.task("prepare.fonts", function(cb) {
 
 gulp.task("prepare.layers", function(cb) {
 
-    var vars = fs.readFileSync("_ds.json");
+    var vars = fs.readFileSync("lucid/_ds.json");
     vars = JSON.parse(vars);
     var name,
         prop,
@@ -150,70 +150,72 @@ gulp.task("prepare.layers", function(cb) {
 
 
 gulp.task("fetch.fonts", function(cb) {
-    request("http://lucid.tld/api/export/json?export_key=9381aee822a0fbdf60c5e7f1996d0bfa", {json: true}, function(error, response, body) {
-        var data = JSON.parse(body.data[0].code),
-            fonts = data.fonts,
-            i, l, f,
-            name, url, ext, filename,
-            runLink = false,
-            cnt = 0,
-            fontsDir = "./MobileApp/assets/fonts";
+    //request("http://new.lucid.style/api/export/json?export_key=5462fe008290e5d6febaa7779d18632f", {json: true}, function(error, response, body) {
+        //var data = JSON.parse(body.data[0].code),
+    var vars = fs.readFileSync("lucid/_ds.json");
+        vars = JSON.parse(vars);
+        fonts = vars.fonts,
+        i, l, f,
+        name, url, ext, filename,
+        runLink = false,
+        cnt = 0,
+        fontsDir = "./MobileApp/assets/fonts";
 
-        fs.ensureDirSync(fontsDir);
-        fs.writeFileSync("./" + body.data[0].name, body.data[0].code);
+    fs.ensureDirSync(fontsDir);
+    fs.writeFileSync("./" + body.data[0].name, body.data[0].code);
 
-        var reactLink = function() {
-            cp.exec(
-                "react-native link",
-                {
-                    cwd: __dirname + "/MobileApp"
-                },
-                function(err, stdout, stderr) {
-                    runLink = false;
-                    if (err) {
-                        console.log(err);
-                    }
-                    done();
+    var reactLink = function() {
+        cp.exec(
+            "react-native link",
+            {
+                cwd: __dirname + "/MobileApp"
+            },
+            function(err, stdout, stderr) {
+                runLink = false;
+                if (err) {
+                    console.log(err);
                 }
-            )
-        };
-
-        var done = function() {
-            if (cnt === 0) {
-                if (runLink === false) {
-                    cb();
-                }
-                else {
-                    reactLink();
-                }
+                done();
             }
-        };
+        )
+    };
 
-        for (i = 0, l = fonts.length; i < l; i++) {
-            f = fonts[i];
-            name = f.family;
-            url = f.url;
-            ext = url.split(".").pop();
-            filename = name + "." + ext;
-            runLink = true;
-
-            if (!fs.existsSync(fontsDir + "/" + filename)) {
-                cnt++;
-                request(url, {encoding: null}, function(error, response, body){
-                    fs.writeFileSync(fontsDir + "/" + filename, body);
-                    cnt--;
-                    done();
-                });
+    var done = function() {
+        if (cnt === 0) {
+            if (runLink === false) {
+                cb();
+            }
+            else {
+                reactLink();
             }
         }
+    };
 
-        done();
-    });
+    for (i = 0, l = fonts.length; i < l; i++) {
+        f = fonts[i];
+        name = f.family;
+        url = f.url;
+        ext = url.split(".").pop();
+        filename = name + "." + ext;
+        runLink = true;
+
+        if (!fs.existsSync(fontsDir + "/" + filename)) {
+            cnt++;
+            request(url, {encoding: null}, function(error, response, body){
+                fs.writeFileSync(fontsDir + "/" + filename, body);
+                cnt--;
+                done();
+            });
+        }
+    }
+
+    done();
+    
 });
 
 
 gulp.task("fetch.css", function(cb){
-    request("http://lucid.tld/api/export/css?export_key=9381aee822a0fbdf60c5e7f1996d0bfa", {json: true}, function(error, response, body) {
+    request("http://new.lucid.style/api/export/css?export_key=5462fe008290e5d6febaa7779d18632f", {json: true}, function(error, response, body) {
         var files = body.data,
             i, l;
 
@@ -225,4 +227,4 @@ gulp.task("fetch.css", function(cb){
     });
 });
 
-gulp.task("prepare", gulpSequence("prepare.colors", "prepare.fonts", "prepare.layers"));
+gulp.task("prepare", gulp.series("prepare.colors", "prepare.fonts", "prepare.layers"));
