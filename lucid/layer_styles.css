@@ -1,0 +1,4 @@
+.top-menu {
+     background-color: var(--top-menu-background-color);
+     box-shadow: var(--top-menu-offset-x) var(--top-menu-offset-y) var(--top-menu-blur) var(--top-menu-spread) var(--top-menu-color);
+}
