@@ -1,0 +1,51 @@
+.subheader-text {
+     font-family: var(--subheader-text-font-family);
+     font-size: var(--subheader-text-font-size);
+     font-weight: var(--subheader-text-font-weight);
+}
+.footer-text {
+     font-family: var(--footer-text-font-family);
+     font-size: var(--footer-text-font-size);
+     font-weight: var(--footer-text-font-weight);
+}
+.menu-text-hover1 {
+     font-family: var(--menu-text-hover1-font-family);
+     font-size: var(--menu-text-hover1-font-size);
+     font-weight: var(--menu-text-hover1-font-weight);
+}
+.menu-text {
+     font-family: var(--menu-text-font-family);
+     font-size: var(--menu-text-font-size);
+     font-weight: var(--menu-text-font-weight);
+}
+.header-text {
+     font-family: var(--header-text-font-family);
+     font-size: var(--header-text-font-size);
+     font-weight: var(--header-text-font-weight);
+}
+.body-text {
+     font-family: var(--body-text-font-family);
+     font-size: var(--body-text-font-size);
+     font-weight: var(--body-text-font-weight);
+}
+.user-test {
+     font-family: var(--user-test-font-family);
+     font-size: var(--user-test-font-size);
+     font-weight: var(--user-test-font-weight);
+}
+.custom-test {
+     font-family: var(--custom-test-font-family);
+     font-size: var(--custom-test-font-size);
+     font-weight: var(--custom-test-font-weight);
+}
+.typekit-test {
+     font-family: var(--typekit-test-font-family);
+     font-size: var(--typekit-test-font-size);
+     font-weight: var(--typekit-test-font-weight);
+     font-style: var(--typekit-test-font-style);
+}
+.google-test {
+     font-family: var(--google-test-font-family);
+     font-size: var(--google-test-font-size);
+     font-weight: var(--google-test-font-weight);
+}
